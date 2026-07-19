@@ -1,0 +1,14 @@
+[
+    {
+        "placa": "wer",
+        "tipo": "1",
+        "disponibilidad": "si",
+        "id": 1
+    },
+    {
+        "placa": "xvl345",
+        "tipo": "2",
+        "disponibilidad": "si",
+        "id": 2
+    }
+]

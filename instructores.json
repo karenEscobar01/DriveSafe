@@ -1,0 +1,23 @@
+[
+    {
+        "nit": "1095923236",
+        "nombre": "Johnatan",
+        "apellidos": "Naranjo",
+        "especialidad": "1",
+        "id": 1
+    },
+    {
+        "nit": "Karen",
+        "nombre": "Karen nombre",
+        "apellidos": "Escobar",
+        "especialidad": "2",
+        "id": 2
+    },
+    {
+        "nit": "10969744",
+        "nombre": "Ricardo",
+        "apellidos": "Alvarez",
+        "especialidad": "1",
+        "id": 3
+    }
+]

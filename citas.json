@@ -1,0 +1,57 @@
+[
+    {
+        "idCliente": 1,
+        "idInstructor": 3,
+        "idVehiculo": 1,
+        "fecha": "2026-07-20",
+        "hora": "13:00",
+        "duracion": "3",
+        "observacion": "Si asistio y es un buen estudiante",
+        "asistencia": "1",
+        "id": 1
+    },
+    {
+        "idCliente": 2,
+        "idInstructor": 3,
+        "idVehiculo": 2,
+        "fecha": "2026-07-20",
+        "hora": "16:00",
+        "duracion": "2",
+        "observacion": "",
+        "asistencia": "",
+        "id": 2
+    },
+    {
+        "idCliente": 1,
+        "idInstructor": 3,
+        "idVehiculo": 1,
+        "fecha": "2026-07-21",
+        "hora": "13:00",
+        "duracion": "3",
+        "observacion": "falto a la clase",
+        "asistencia": "2",
+        "id": 3
+    },
+    {
+        "idCliente": 1,
+        "idInstructor": 3,
+        "idVehiculo": 1,
+        "fecha": "2026-07-18",
+        "hora": "13:00",
+        "duracion": "4",
+        "observacion": "Esta es la obervacion de la cita 4",
+        "asistencia": "1",
+        "id": 4
+    },
+    {
+        "idCliente": 1,
+        "idInstructor": 3,
+        "idVehiculo": 1,
+        "fecha": "2026-07-22",
+        "hora": "12:00",
+        "duracion": "4",
+        "observacion": "",
+        "asistencia": "",
+        "id": 5
+    }
+]
