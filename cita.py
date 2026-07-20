@@ -90,7 +90,7 @@ def validacionDisponibilidadCitas(listadoCitas,strFechIniPet,hora,duracionPetici
     timeHorasSumarPet = timedelta(hours=horasSumarPet)
     fechaFinalPet = fechIncialPet+timeHorasSumarPet
 
-    print(f"fechIncialPeticion {fechIncialPet} - fechFinalCitaPeticion {fechaFinalPet}")
+   # print(f"fechIncialPeticion {fechIncialPet} - fechFinalCitaPeticion {fechaFinalPet}")
 
     esDisponible = True
     for cita_b in listadoCitas:
@@ -99,7 +99,7 @@ def validacionDisponibilidadCitas(listadoCitas,strFechIniPet,hora,duracionPetici
         horasSumarCita = int(cita_b["duracion"])
         timeHorasSumarCita = timedelta(hours=horasSumarCita)
         fechaFinalCita = fechIncialCita+timeHorasSumarCita
-        print(f"fechIncialCita {fechIncialCita} - fechFinalCita {fechaFinalCita}")
+       # print(f"fechIncialCita {fechIncialCita} - fechFinalCita {fechaFinalCita}")
 
         if (fechIncialPet>=fechIncialCita and fechIncialPet<fechaFinalCita):
             esDisponible = False
