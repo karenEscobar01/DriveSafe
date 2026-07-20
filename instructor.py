@@ -31,3 +31,10 @@ def getIdByNit(nit):
         if instructor["nit"] == nit:
             idInstructor = instructor["id"]
     return idInstructor
+
+def ValidarInstructor(nit):
+    ListaInstructores = getListaInstructores()
+    for instructor in ListaInstructores:
+        if instructor["nit"] == nit:
+            return False
+    return True    

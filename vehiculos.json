@@ -10,5 +10,11 @@
         "tipo": "2",
         "disponibilidad": "si",
         "id": 2
+    },
+    {
+        "placa": "3003",
+        "tipo": "2",
+        "disponibilidad": "si",
+        "id": 3
     }
 ]

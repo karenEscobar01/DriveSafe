@@ -32,3 +32,11 @@ def getIdByPlaca(placa):
         if vehiculo["placa"] == placa:
             idVehiculo = vehiculo["id"] 
     return idVehiculo
+
+def validarVehiculo(placa):
+    listaVehiculos = getListaVehiculos()
+    for vehiculo in listaVehiculos:
+        if vehiculo["placa"] == placa:
+            return False
+    return True 
+    

@@ -19,5 +19,12 @@
         "apellidos": "Alvarez",
         "especialidad": "1",
         "id": 3
+    },
+    {
+        "nit": "karen",
+        "nombre": "karen nombre",
+        "apellidos": "Escobar",
+        "especialidad": "2",
+        "id": 4
     }
 ]

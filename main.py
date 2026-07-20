@@ -19,10 +19,19 @@ while (opt!=0):
         
     if(opt == 2):
         nitInst,nombInst,apellInst,idEsp = menus.pintaraMenuRegistrarInstructor()
-        instructor.crearInstructor(nitInst,nombInst,apellInst,idEsp)
+        esValido = instructor.ValidarInstructor(nitInst)
+        if(esValido):
+            instructor.crearInstructor(nitInst,nombInst,apellInst,idEsp)
+        else:
+            print("EL NiT YA EXISTE")
+            
     if(opt == 3):
         idTipVehi,placaVehi,dispoVehiculo = menus.pintaraMenuRegistrarVehiculo()
-        vehiculo.crearVehiculo(idTipVehi,placaVehi,dispoVehiculo)
+        esValido = vehiculo.validarVehiculo(placaVehi)
+        if(esValido): 
+            vehiculo.crearVehiculo(idTipVehi,placaVehi,dispoVehiculo)
+        else:
+            print("LA PLACA YA EXISTE EN EL SISTEMA")
     if(opt == 4):
         nitCli,nitInst,placa,strFecha,strHora,strDuracion = menus.pintaraMenuProgramarCita()
         idCliente = cliente.getIdByNit(nitCli)
