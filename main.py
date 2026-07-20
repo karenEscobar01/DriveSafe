@@ -5,10 +5,13 @@ import vehiculo
 import cita
 
 from datetime import datetime
+print(" BIENVENIDO A DRIVESAFE GIRON ")
 
 opt = menus.pintarMenuPrincipal()
 while (opt!=0):
     if opt == 1:
+        print(" BIENVENIDO A REGISTRAR CLIENTE ")
+        
         nitCli,nombCli,apellCli = menus.pintaraMenuRegistrarCliente()
 
         esValido  = cliente.validarClienteByNit(nitCli)
@@ -18,6 +21,8 @@ while (opt!=0):
             print("EL NIT DIGITADO YA EXISTE")
         
     if(opt == 2):
+        print(" BIENVENIDO A REGISTAR INTRUCTOR ")
+
         nitInst,nombInst,apellInst,idEsp = menus.pintaraMenuRegistrarInstructor()
         esValido = instructor.ValidarInstructor(nitInst)
         if(esValido):
@@ -26,6 +31,7 @@ while (opt!=0):
             print("EL NiT YA EXISTE")
             
     if(opt == 3):
+        print(" BIENVENIDO A REGISTAR VEHICULO ")
         idTipVehi,placaVehi,dispoVehiculo = menus.pintaraMenuRegistrarVehiculo()
         esValido = vehiculo.validarVehiculo(placaVehi)
         if(esValido): 
@@ -33,6 +39,8 @@ while (opt!=0):
         else:
             print("LA PLACA YA EXISTE EN EL SISTEMA")
     if(opt == 4):
+        print(" BIENVENIDO A PROGRMAR CITA")
+
         nitCli,nitInst,placa,strFecha,strHora,strDuracion = menus.pintaraMenuProgramarCita()
         idCliente = cliente.getIdByNit(nitCli)
         idInstructor = instructor.getIdByNit(nitInst)
@@ -66,6 +74,8 @@ while (opt!=0):
                         print("NO HAY DISPONIBILIDAD POR INSTRUCTOR")
 
     if(opt == 5):
+        print(" BIENVENIDAD CONSULTAR CITA ")
+
         optConsultar = menus.pintarMenuConsultarCitas()
         listaCitasMostrar = []
         listCitas = cita.getListaCitas()
@@ -99,10 +109,14 @@ while (opt!=0):
 
         
     if(opt == 6):
+        print(" BIENVENIDO A LA CONFIRMACION DE CITAS ")
+
         idCita,obs,asis = menus.pintarMenuObserAsis()
         cita.actualizarCita(idCita,obs,asis)
 
-    if opt == 7:
+    if (opt == 7):
+        print(" BIENVENIDO A CONSULTAR HISTORIAL POR CLIENTE")
+
         nitClientHist = menus.pintarMenuNitCliente()
         listadoCitasHist = cita.obtenerHistorialByCliente(nitClientHist)
         for cita_b in listadoCitasHist:
@@ -113,7 +127,6 @@ while (opt!=0):
             if idAsist == "2":
                 strAsist = "No"
             print(f"id cita:{cita_b['id']} \nid cliente:{cita_b['idCliente']} \nfecha:{cita_b['fecha']} \nhora:{cita_b['hora']} \nduracion:{cita_b['duracion']} \nobservacion:{cita_b['observacion']} \nasistencia {strAsist}")
-    
     if(opt == 0):
         break
 

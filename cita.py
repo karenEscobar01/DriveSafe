@@ -111,12 +111,3 @@ def validacionDisponibilidadCitas(listadoCitas,strFechIniPet,hora,duracionPetici
             esDisponible = False
             break
     return esDisponible
-
-
-        
-
-
-
-
-        
-
