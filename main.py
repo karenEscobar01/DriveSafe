@@ -28,10 +28,34 @@ while (opt!=0):
         idCliente = cliente.getIdByNit(nitCli)
         idInstructor = instructor.getIdByNit(nitInst)
         idVehiculo = vehiculo.getIdByPlaca(placa)
+        listaCitasVehiculo = cita.getListaCitasVehiculo(idVehiculo)
+        esValidoVehiculos = cita.validacionDisponibilidadCitas(listaCitasVehiculo,strFecha
+                                                      ,strHora,strDuracion)
+        
+        listaCitasCliente = cita.getListaCitasCliente(idCliente)
+        esValidoCliente = cita.validacionDisponibilidadCitas(listaCitasCliente,strFecha
+                                                      ,strHora,strDuracion)
+        
+        listaCitasInstructor = cita.getListaCitasInstructor(idInstructor)
+        esValidoInstructor = cita.validacionDisponibilidadCitas(listaCitasInstructor,strFecha
+                                                      ,strHora,strDuracion)
+        #if esValido:
+            #print("SE PUEDE HACER LA CITA")
+        #else:
+            #print("NO HAY DISPONIBILIDAD")
         #print(f"idCliente:{idCliente} idInstructor:{idInstructor} idVehiculo:{idVehiculo}")
-        if nitCli is not None:
+        if nitCli is not None and esValidoVehiculos and esValidoCliente and esValidoInstructor:
             cita.crearCita(idCliente,idInstructor,idVehiculo,strFecha,strHora,strDuracion)
-    
+        else:
+            if not esValidoVehiculos:
+                 print("NO HAY DISPONIBILIDAD DE AUTOMOVIL")
+            else:
+                if not esValidoCliente:
+                    print("NO HAY DISPONIBILIDAD POR CLIENTE")
+                else:
+                    if not esValidoInstructor:
+                        print("NO HAY DISPONIBILIDAD POR INSTRUCTOR")
+
     if(opt == 5):
         optConsultar = menus.pintarMenuConsultarCitas()
         listaCitasMostrar = []

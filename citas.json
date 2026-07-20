@@ -15,7 +15,7 @@
         "idInstructor": 3,
         "idVehiculo": 2,
         "fecha": "2026-07-20",
-        "hora": "16:00",
+        "hora": "8:00",
         "duracion": "2",
         "observacion": "",
         "asistencia": "",
@@ -53,5 +53,60 @@
         "observacion": "",
         "asistencia": "",
         "id": 5
+    },
+    {
+        "idCliente": 1,
+        "idInstructor": 3,
+        "idVehiculo": 1,
+        "fecha": "2026-07-20",
+        "hora": "11:00",
+        "duracion": "1",
+        "observacion": "",
+        "asistencia": "",
+        "id": 6
+    },
+    {
+        "idCliente": 1,
+        "idInstructor": 3,
+        "idVehiculo": 1,
+        "fecha": "2026-07-23",
+        "hora": "11:00",
+        "duracion": "2",
+        "observacion": "",
+        "asistencia": "",
+        "id": 7
+    },
+    {
+        "idCliente": 1,
+        "idInstructor": 3,
+        "idVehiculo": 2,
+        "fecha": "2026-07-24",
+        "hora": "7:00",
+        "duracion": "2",
+        "observacion": "",
+        "asistencia": "",
+        "id": 8
+    },
+    {
+        "idCliente": 2,
+        "idInstructor": 3,
+        "idVehiculo": 1,
+        "fecha": "2026-07-24",
+        "hora": "7:00",
+        "duracion": "2",
+        "observacion": "",
+        "asistencia": "",
+        "id": 9
+    },
+    {
+        "idCliente": 1,
+        "idInstructor": 3,
+        "idVehiculo": 2,
+        "fecha": "2026-07-25",
+        "hora": "8:00",
+        "duracion": "2",
+        "observacion": "",
+        "asistencia": "",
+        "id": 10
     }
 ]
