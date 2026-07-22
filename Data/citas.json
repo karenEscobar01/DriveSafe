@@ -130,5 +130,16 @@
         "observacion": "llegado tarde a la clase",
         "asistencia": "1",
         "id": 12
+    },
+    {
+        "idCliente": 1,
+        "idInstructor": 7,
+        "idVehiculo": 6,
+        "fecha": "2026-07-10",
+        "hora": "9:00",
+        "duracion": "4",
+        "observacion": "",
+        "asistencia": "",
+        "id": 13
     }
 ]
