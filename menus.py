@@ -7,7 +7,7 @@ def pintarMenuPrincipal():
     menu +="3. Registrar vehiculo\n"
     menu +="4. Programar cita\n"
     menu +="5. Consultar citas\n"
-    menu +="6. Confirmacion de  cita\n"
+    menu +="6. Registro de asistencia y observaciones de la cita\n"
     menu +="7. Consultar historial por cliente\n"
     menu +="0. Salir\n"
 

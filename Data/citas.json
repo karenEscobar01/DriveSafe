@@ -105,8 +105,8 @@
         "fecha": "2026-07-25",
         "hora": "8:00",
         "duracion": "2",
-        "observacion": "",
-        "asistencia": "",
+        "observacion": "No asistio a clase",
+        "asistencia": "2",
         "id": 10
     },
     {
@@ -141,5 +141,16 @@
         "observacion": "",
         "asistencia": "",
         "id": 13
+    },
+    {
+        "idCliente": 10,
+        "idInstructor": 3,
+        "idVehiculo": 4,
+        "fecha": "2026-08-01",
+        "hora": "10:00",
+        "duracion": "2",
+        "observacion": "no escucha las indicaciones dadas por el docente",
+        "asistencia": "1",
+        "id": 14
     }
 ]

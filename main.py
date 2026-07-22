@@ -131,7 +131,7 @@ while (opt != 0):
             print(f"id cita:{cita_b['id']} id cliente:{cita_b['idCliente']} fecha:{cita_b['fecha']} hora:{cita_b['hora']} duracion:{cita_b['duracion']}")
         
     if(opt == 6):
-        print(" BIENVENIDO A LA CONFIRMACION DE CITAS ")
+        print(" REGISTRO DE OBSERVACIONES Y ASISTENCIA DE LAS CITAS ")
 
         idCita, obs, asis = menus.pintarMenuObserAsis()
         cita.actualizarCita(idCita, obs, asis)
