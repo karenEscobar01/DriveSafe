@@ -2,7 +2,7 @@ import menus
 import instructor
 import cliente
 import vehiculo
-import cita
+import cita 
 
 from datetime import datetime
 print(" BIENVENIDO A DRIVESAFE GIRON ")
@@ -10,7 +10,7 @@ print(" BIENVENIDO A DRIVESAFE GIRON ")
 opt = menus.pintarMenuPrincipal()
 while (opt!=0):
     if opt == 1:
-        print(" BIENVENIDO A REGISTRAR CLIENTE ")
+        print("BIENVENIDO A REGISTRAR CLIENTE ")
         
         nitCli,nombCli,apellCli = menus.pintaraMenuRegistrarCliente()
 
@@ -126,7 +126,7 @@ while (opt!=0):
                 strAsist = "Si"
             if idAsist == "2":
                 strAsist = "No"
-            print(f"id cita:{cita_b['id']} \nid cliente:{cita_b['idCliente']} \nfecha:{cita_b['fecha']} \nhora:{cita_b['hora']} \nduracion:{cita_b['duracion']} \nobservacion:{cita_b['observacion']} \nasistencia {strAsist}")
+            print(f"id cita:{cita_b['id']} \nid cliente:{cita_b['idCliente']} \nfecha:{cita_b['fecha']} \nhora:{cita_b['hora']} \nduracion:{cita_b['duracion']} \nobservacion:{cita_b['observacion']} \nasistencia: {strAsist}")
     if(opt == 0):
         break
 

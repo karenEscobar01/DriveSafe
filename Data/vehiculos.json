@@ -1,0 +1,38 @@
+[
+    {
+        "placa": "vft17f",
+        "tipo": "1",
+        "disponibilidad": "si",
+        "id": 1
+    },
+    {
+        "placa": "kd13l",
+        "tipo": "1",
+        "disponibilidad": "si",
+        "id": 2
+    },
+    {
+        "placa": "mnp8o",
+        "tipo": "2",
+        "disponibilidad": "si",
+        "id": 3
+    },
+    {
+        "placa": "saw98",
+        "tipo": "2",
+        "disponibilidad": "si",
+        "id": 4
+    },
+    {
+        "placa": "Alsm21",
+        "tipo": "1",
+        "disponibilidad": "si",
+        "id": 5
+    },
+    {
+        "placa": "kdps09",
+        "tipo": "1",
+        "disponibilidad": "si",
+        "id": 6
+    }
+]

@@ -108,5 +108,16 @@
         "observacion": "",
         "asistencia": "",
         "id": 10
+    },
+    {
+        "idCliente": 7,
+        "idInstructor": 7,
+        "idVehiculo": 6,
+        "fecha": "2026-07-15",
+        "hora": "14:00",
+        "duracion": "2",
+        "observacion": "choco el carro",
+        "asistencia": "1",
+        "id": 11
     }
 ]

@@ -1,0 +1,44 @@
+[
+    {
+        "nit": "1005236072",
+        "nombre": "karen",
+        "apellido": "escobar",
+        "id": 1
+    },
+    {
+        "nit": "1101683185",
+        "nombre": "alejandra",
+        "apellido": "sarmiento",
+        "id": 2
+    },
+    {
+        "nit": "4332",
+        "nombre": "juandavid",
+        "apellido": "Esparza",
+        "id": 3
+    },
+    {
+        "nit": "123456",
+        "nombre": "Duban",
+        "apellido": "Bernal",
+        "id": 4
+    },
+    {
+        "nit": "6072",
+        "nombre": "Alejandro",
+        "apellido": "pinto",
+        "id": 5
+    },
+    {
+        "nit": "987",
+        "nombre": "yeral",
+        "apellido": "gutierrez",
+        "id": 6
+    },
+    {
+        "nit": "0009",
+        "nombre": "lili",
+        "apellido": "lopez",
+        "id": 7
+    }
+]

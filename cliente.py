@@ -4,14 +4,14 @@ def crearCliente(nit,nombre,apellido):
     listadoClientes = getListaClientes()
     listadoClientes.append(dtoCliente)
     dtoCliente["id"] = getId()
-    with open("clientes.json","w") as archivoClientes:
+    with open("Data/clientes.json","w") as archivoClientes:
         archivoClientes = json.dump(listadoClientes,archivoClientes,indent=4)
 
 
 def getListaClientes():
     listaClientes = []
     try:
-        with open("clientes.json","r") as archivoClientes:
+        with open("Data/clientes.json","r") as archivoClientes:
             listaClientes = json.load(archivoClientes)
     except FileNotFoundError as e:
         print("No se ha creado el archivo clientes.json")

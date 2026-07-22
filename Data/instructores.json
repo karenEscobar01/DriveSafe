@@ -1,0 +1,51 @@
+[
+    {
+        "nit": "123",
+        "nombre": "carlos",
+        "apellidos": "martinez",
+        "especialidad": "2",
+        "id": 1
+    },
+    {
+        "nit": "456",
+        "nombre": "pablo",
+        "apellidos": "perez",
+        "especialidad": "2",
+        "id": 2
+    },
+    {
+        "nit": "789",
+        "nombre": "cristian",
+        "apellidos": "cepeda",
+        "especialidad": "1",
+        "id": 3
+    },
+    {
+        "nit": "963",
+        "nombre": "julian",
+        "apellidos": "dormido",
+        "especialidad": "1",
+        "id": 4
+    },
+    {
+        "nit": "1238139934",
+        "nombre": "kendy",
+        "apellidos": "franco",
+        "especialidad": "2",
+        "id": 5
+    },
+    {
+        "nit": "312438",
+        "nombre": "Dayron",
+        "apellidos": "jimenez",
+        "especialidad": "2",
+        "id": 6
+    },
+    {
+        "nit": "0008",
+        "nombre": "kike",
+        "apellidos": "serrano",
+        "especialidad": "2",
+        "id": 7
+    }
+]

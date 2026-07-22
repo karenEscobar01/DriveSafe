@@ -5,13 +5,13 @@ def crearVehiculo(tipo,placa,disponibilidad):
     listadoVehiculos = getListaVehiculos()
     dtoVehiculo["id"] = getId()
     listadoVehiculos.append(dtoVehiculo)
-    with open("vehiculos.json","w") as archivoVehiculos:
+    with open("Data/vehiculos.json","w") as archivoVehiculos:
         archivoVehiculos = json.dump(listadoVehiculos,archivoVehiculos,indent=4)
 
 def getListaVehiculos():
     listaVehiculos = []
     try:
-        with open("vehiculos.json","r") as archivoVehiculos:
+        with open("Data/vehiculos.json","r") as archivoVehiculos:
             listaVehiculos = json.load(archivoVehiculos)
     except FileNotFoundError as e:
         print("No se ha creado el archivo vehiculos.json")

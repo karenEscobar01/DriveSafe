@@ -10,7 +10,7 @@ def pintarMenuPrincipal():
     menu +="6. Confirmacion de  cita\n"
     menu +="7. Consultar historial por cliente\n"
     menu +="0. Salir\n"
-    
+
     opcion = int(input(menu))
     return opcion
 

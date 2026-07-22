@@ -4,13 +4,13 @@ def crearInstructor(nit,nombre,apellidos,idEspecialidad):
     listadoInstructores = getListaInstructores()
     dtoInstructor["id"] = getId()
     listadoInstructores.append(dtoInstructor)
-    with open("instructores.json","w") as archivoInstructores:
+    with open("Data/instructores.json","w") as archivoInstructores:
         archivoInstructores = json.dump(listadoInstructores,archivoInstructores,indent=4)
 
 def getListaInstructores():
     listaInstructores = []
     try:
-        with open("instructores.json","r") as archivoInstructores:
+        with open("Data/instructores.json","r") as archivoInstructores:
             listaInstructores = json.load(archivoInstructores)
     except FileNotFoundError as e:
         print("No se ha creado el archivo instructores.json")

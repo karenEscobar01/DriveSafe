@@ -10,15 +10,16 @@ def crearCita(idCliente,idInstructor,idVehiculo,fecha,hora,duracion):
     dtoCita["id"] = getId()
     listaCitas = getListaCitas()
     listaCitas.append(dtoCita)
-    with open("citas.json","w") as archivoCitas:
+    with open("Data/citas.json.","w") as archivoCitas:
         archivoCitas = json.dump(listaCitas,archivoCitas,indent=4)
 
 def getListaCitas():
     listasCitas = []
     try:
-        with open("citas.json","r") as archivoCitas:
+        with open("Data/citas.json","r") as archivoCitas:
             listasCitas = json.load(archivoCitas)
     except FileNotFoundError as e:
+
         print("No se ha creado el archivo citas.json")
     return listasCitas
 
@@ -34,6 +35,7 @@ def getId():
 def actualizarCita(idCita,obser,asist):
     listadoCitas = getListaCitas()
     citaAux = None
+
     for cita in listadoCitas:
         if cita["id"] == idCita:
             citaAux = cita
@@ -42,8 +44,8 @@ def actualizarCita(idCita,obser,asist):
     citaAux["observacion"] = obser
     citaAux["asistencia"] = asist
 
-    with open("citas.json","w") as archivoCitas:
-        archivoCitas = json.dump(listadoCitas,archivoCitas,indent=4)
+    with open("Data/citas.json","w") as archivoCitas:
+         archivoCitas = json.dump(listadoCitas,archivoCitas,indent=4)
 
 def obtenerHistorialByCliente(nit):
     idCliente = cliente.getIdByNit(nit)
@@ -56,7 +58,7 @@ def obtenerHistorialByCliente(nit):
         fechaCita = datetime.strptime(strFechaCita, "%Y-%m-%d %H:%M")
         if fechaCita<datetime.now() and cita_b["idCliente"]==idCliente:
             listadoCitasRetornar.append(cita_b)
-    
+
     return listadoCitasRetornar
 
 def getListaCitasVehiculo(idVehiculo):
@@ -90,7 +92,7 @@ def validacionDisponibilidadCitas(listadoCitas,strFechIniPet,hora,duracionPetici
     timeHorasSumarPet = timedelta(hours=horasSumarPet)
     fechaFinalPet = fechIncialPet+timeHorasSumarPet
 
-   # print(f"fechIncialPeticion {fechIncialPet} - fechFinalCitaPeticion {fechaFinalPet}")
+    #print(f"fechIncialPeticion {fechIncialPet} - fechFinalCitaPeticion {fechaFinalPet}")
 
     esDisponible = True
     for cita_b in listadoCitas:
@@ -99,7 +101,7 @@ def validacionDisponibilidadCitas(listadoCitas,strFechIniPet,hora,duracionPetici
         horasSumarCita = int(cita_b["duracion"])
         timeHorasSumarCita = timedelta(hours=horasSumarCita)
         fechaFinalCita = fechIncialCita+timeHorasSumarCita
-       # print(f"fechIncialCita {fechIncialCita} - fechFinalCita {fechaFinalCita}")
+        #print(f"fechIncialCita {fechIncialCita} - fechFinalCita {fechaFinalCita}")
 
         if (fechIncialPet>=fechIncialCita and fechIncialPet<fechaFinalCita):
             esDisponible = False
