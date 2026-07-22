@@ -119,5 +119,16 @@
         "observacion": "choco el carro",
         "asistencia": "1",
         "id": 11
+    },
+    {
+        "idCliente": 9,
+        "idInstructor": 8,
+        "idVehiculo": 7,
+        "fecha": "2026-07-10",
+        "hora": "9:00",
+        "duracion": "3",
+        "observacion": "llegado tarde a la clase",
+        "asistencia": "1",
+        "id": 12
     }
 ]

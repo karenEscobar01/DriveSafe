@@ -34,5 +34,11 @@
         "tipo": "1",
         "disponibilidad": "si",
         "id": 6
+    },
+    {
+        "placa": "Gt01",
+        "tipo": "1",
+        "disponibilidad": "si",
+        "id": 7
     }
 ]

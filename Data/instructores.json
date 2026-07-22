@@ -47,5 +47,12 @@
         "apellidos": "serrano",
         "especialidad": "2",
         "id": 7
+    },
+    {
+        "nit": "110",
+        "nombre": "sabor",
+        "apellidos": "mora",
+        "especialidad": "2",
+        "id": 8
     }
 ]
